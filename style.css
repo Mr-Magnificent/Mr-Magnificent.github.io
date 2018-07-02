@@ -40,9 +40,6 @@ p {
     padding: 0 5%;
 }
 
-#about, .education, .projects {
-    min-height: 100vh;
-}
 
 .contact {
     width: 100%;
