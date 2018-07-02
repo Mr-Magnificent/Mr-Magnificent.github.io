@@ -1,0 +1,14 @@
+@media screen and (min-width: 550px) {
+    #about, .education, .projects {
+        min-height: 100vh;
+    }
+
+    .about {
+        position: relative;
+    }
+
+    #stickName {
+        position: sticky;
+        top: 0;
+    }
+}
