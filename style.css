@@ -40,6 +40,10 @@ p {
     padding: 0 5%;
 }
 
+#about, .education, .projects {
+    min-height: 100vh;
+}
+
 .contact {
     width: 100%;
     background-color: rgb(200, 200, 200) !important;
