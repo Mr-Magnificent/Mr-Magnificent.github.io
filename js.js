@@ -32,10 +32,54 @@ window.onload = function() {
     let lang = document.getElementsByClassName('lang');
     for(let i = 0; i < lang.length; i++) {
         let tempColor = getRandomInt();
-        lang[i].style.color = `hsl(${tempColor}, 100%, 42%)`;
+        lang[i].style.color = `hsl(${tempColor}, 100%, 25%)`;
         // console.log(lang[i]);
     }
 }
 
 colorCh();
+}
+
+function scrolling(obj) {
+    let ide = obj.id;
+
+    if (ide == 1) {    
+        document.querySelector('#lang').scrollIntoView({ 
+            behavior: 'smooth',
+            block: "start", 
+            // inline: "nearest"
+        });
+        setTimeout(scrollTen, 700);
+    }
+    else if (ide == 2) {
+        document.querySelector('#projects').scrollIntoView({ 
+            behavior: 'smooth',
+            block: "start", 
+            // inline: "nearest"
+        });
+        setTimeout(scrollTen, 700);   
+    }
+    else if (ide == 3) {
+        document.querySelector('#education').scrollIntoView({ 
+            behavior: 'smooth',
+            block: "start", 
+            // inline: "nearest"
+        });
+        setTimeout(scrollTen, 800);
+    }
+    else if (ide == 4) {
+        document.querySelector('#contact').scrollIntoView({ 
+            behavior: 'smooth',
+            block: "start", 
+            // inline: "nearest"
+        });
+    }
+
+} 
+
+function scrollTen () {
+    window.scrollBy({
+        top: -50,
+        behavior: "smooth"
+    })
 }
