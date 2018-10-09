@@ -22,6 +22,7 @@ p {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    background: linear-gradient(90deg, #009688, #9ed6f1);
     /*-webkit-transition: background 0.2s linear;*/
     /*-moz-transition: background 0.2s linear;*/
     /*-o-transition: background 0.2s linear;*/
@@ -57,14 +58,15 @@ p {
 
 .about {
     margin: 0 auto;
-    animation-name: transit;
+    background: linear-gradient(153deg, #ffd24b94, #9ed6f1);
+    /* animation-name: transit;
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
-@keyframes transit {
+/* @keyframes transit {
     0% {
         background-color: #F0CB35;
     }
@@ -80,7 +82,7 @@ p {
     100% {
         background-color: #dc2430;
     }
-}
+} */
 
 h4 {
     padding-left: 10px;
@@ -110,7 +112,7 @@ h4 {
     top: -1px;
     height: 30px;
     z-index: 1000;
-    background-color: #6d6d6d;
+    background-color: #ffffff;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
